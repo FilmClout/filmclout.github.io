@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
 	<meta name="author" content="Malith Koralage" />
 	<meta name="description" content="FilmClout Democratizing indie film projects" />
-	<meta name="keywords"
-		content="BlockFilms,indie film projects, film " />
+	<meta name="keywords" content="BlockFilms,indie film projects, film " />
 	<title>FilmClout | Home</title>
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="style.css">
@@ -26,10 +25,13 @@
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#features" class="header-link">FEATURES</a>
 					</li>
-					<li><a href="#pricing" class="header-link">OUR FILMS</a></li>
+					<li><a href="#films" class="header-link">FILMS</a></li>
 					<li><a href="https://bitclout.com/u/FilmClout" target="_blank" class="header-link">CONTACT</a></li>
 					<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin"
-						data-popup="login"><a href="#" onclick="login()">LOGIN</a></li>
+						data-popup="login"><a href="#" id="logbtn" onclick="login()">LOGIN</a></li>
+					
+					<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin"
+						data-popup="login"><a href="#" id="logout" onclick="logout()">LOGOUT</a></li>
 
 				</ul>
 			</nav>
@@ -47,7 +49,7 @@
 					<div class="intro__buttons intro__buttons--left">
 						<a href="https://bitclout.com/u/FilmClout" target="_blank" class="btn btn--blue-bg"
 							data-openpopup="animation">PROFILE</a>
-						<a href="#" onclick="login()" class="btn btn--orange-bg">LOGIN</a>
+						<a href="#" onclick="login()" class="btn btn--orange-bg herologin">LOGIN</a>
 					</div>
 				</div>
 			</div>
@@ -80,8 +82,10 @@
 					<p class="grid__text">Easily raise money for or fund indie films projects, powered by BitClout</p>
 					<ul class="grid__list">
 						<li>FilmClout is a project by BlockFilms.</li>
-						<li>BlockFilms started prior to 2018 as a concept of using Bitcoin smart contracts to crowdfund indie films.</li>
-						<li>FilmClout is a similar concept, but this is powered by BitClout and creator coins instead.</li>
+						<li>BlockFilms started prior to 2018 as a concept of using Bitcoin smart contracts to crowdfund
+							indie films.</li>
+						<li>FilmClout is a similar concept, but this is powered by BitClout and creator coins instead.
+						</li>
 					</ul>
 
 				</div>
@@ -102,7 +106,8 @@
 
 				<div class="grid__item grid__item--x2 grid__item--floated-right">
 					<h3 class="grid__title">The pitch process needs to be <span>much simpler</span></h3>
-					<p class="grid__text">It is becoming more and more expensive to pitch an indie film, get an agent, and really make the connections you need.</p>
+					<p class="grid__text">It is becoming more and more expensive to pitch an indie film, get an agent,
+						and really make the connections you need.</p>
 					<ul class="grid__list">
 						<li>Stop preventing good films from being made</li>
 						<li>Simplify and streamline crowdsourcing for your film</li>
@@ -120,7 +125,7 @@
 		</div>
 
 	</section>
-	
+
 	<!-- Section -- features -->
 	<section class="section section--features" id="features">
 
@@ -165,10 +170,10 @@
 
 
 	<!-- Section -- pricing -->
-	<section class="section api-section" id="pricing">
+	<section class="section api-section" id="films">
 
 		<div class="section__content section__content--fluid-width section__content--padding">
-			<h2 class="section__title section__title--centered">Our Films</h2>
+			<h2 class="section__title section__title--centered">Films</h2>
 			<div class="section__description section__description--centered">
 				We believe we have created the most efficient SaaS landing page for your users. Landing page with
 				features that will convince you to use it for your SaaS business.
@@ -199,7 +204,7 @@
 	<!-- Section -- testimonials -->
 
 	<!-- section removed -->
-	
+
 	<section class="section" id="support">
 		<div class="section__content section__content--fluid-width section__content--padding">
 			<div class="grid grid--2col grid--support">
@@ -212,7 +217,8 @@
 						Get our media resources and learn about our company information.</p>
 				</div>
 				<div class="grid__item grid__item--padding grid__item--centering">
-					<a href="https://bitclout.com/u/FilmClout" target="_blank" class="grid__more">GET IN TOUCH NOW</a>
+					<a href="https://bitclout.com/u/FilmClout" target="_blank" id="gridmore" class="grid__more">GET IN
+						TOUCH NOW</a>
 				</div>
 				<svg class="svg-support-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
 					preserveAspectRatio="none">
@@ -232,24 +238,24 @@
 			<div class="grid grid--5col">
 
 				<div class="grid__item">
-					<div class="grid__client-logo"><a href="https://digitalcpr.net" target="_blank"><img src="images/clients/client_logo_2.png" alt=""
-								title="" /></a></div>
+					<div class="grid__client-logo"><a href="https://digitalcpr.net" target="_blank"><img
+								src="images/clients/client_logo_2.png" alt="" title="" /></a></div>
 				</div>
 				<div class="grid__item">
-					<div class="grid__client-logo"><a href="https://wecrypto.net" target="_blank"><img src="images/clients/client_logo_4.png" alt=""
-								title="" /></a></div>
+					<div class="grid__client-logo"><a href="https://wecrypto.net" target="_blank"><img
+								src="images/clients/client_logo_4.png" alt="" title="" /></a></div>
 				</div>
 				<div class="grid__item">
-					<div class="grid__client-logo"><a href="https://peer-social.com/" target="_blank"><img src="images/clients/client_logo_3.png" alt=""
-								title="" /></a></div>
+					<div class="grid__client-logo"><a href="https://peer-social.com/" target="_blank"><img
+								src="images/clients/client_logo_3.png" alt="" title="" /></a></div>
 				</div>
 				<div class="grid__item">
-					<div class="grid__client-logo"><a href="https://bitbadges.web.app" target="_blank"><img src="images/clients/client_logo_5.png" alt=""
-								title="" /></a></div>
+					<div class="grid__client-logo"><a href="https://bitbadges.web.app" target="_blank"><img
+								src="images/clients/client_logo_5.png" alt="" title="" /></a></div>
 				</div>
 				<div class="grid__item">
-					<div class="grid__client-logo"><a href="https://bitclout.com/u/CloutWorld" target="_blank"><img src="images/clients/client_logo_1.png" alt=""
-								title="" /></a></div>
+					<div class="grid__client-logo"><a href="https://bitclout.com/u/CloutWorld" target="_blank"><img
+								src="images/clients/client_logo_1.png" alt="" title="" /></a></div>
 				</div>
 			</div>
 
@@ -293,14 +299,14 @@
 					<ul class="grid__list grid__list--fmenu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#features">Features</a></li>
-						<li><a href="#pricing">Our Films</a></li>
+						<li><a href="#films">Films</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
 					<h3 class="grid__title grid__title--footer">Films</h3>
 					<ul class="grid__list grid__list--fmenu">
 
-						<li><a href="#" onclick="login()">Login</a></li>
+						<li><a href="#" class="log-btn" onclick="login()">Login</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
@@ -327,9 +333,18 @@
 	<script src="js/login.js"></script>
 
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function () {
 			$('.api-section').css('display', 'none')
+			$('#logout').css('display', 'none');
 		});
+
+		function logout(){
+			window.location.reload()
+		}
+
+		function login() {
+			identityWindow = window.open('https://identity.bitclout.com/log-in', null,'toolbar=no, width=800, height=1000, top=0, left=0');
+		}
 	</script>
 
 </body>
