@@ -25,7 +25,14 @@ function handleLogin(payload) {
         var element = document.getElementById('loggedin');
         alert('Logged in as' + payload.publicKeyAdded);
         $('.api-section').css('display', 'block')
+        $('.log-btn').css('display', 'none');
+        $('#logbtn').css('display', 'none');
+        $('.herologin').css('display', 'none');
+        $('.btn--orange-bg').css('display', 'none');
+        $('#gridmore').css('display', 'none');
+        $('#logout').css('display', 'block');
         //element.innerText = 'Logged in as ' + payload.publicKeyAdded;
+
     }
 }
 
@@ -59,8 +66,13 @@ window.addEventListener('message', message => {
     }
 });
 
+function logout() {
+    login = false;
+    window.location.reload();
+}
 
 var init = false;
 var iframe = null;
 var pendingRequests = [];
 var identityWindow = null;
+var login = false;
