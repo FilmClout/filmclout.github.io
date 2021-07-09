@@ -25,7 +25,7 @@
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#features" class="header-link">FEATURES</a>
 					</li>
-					<li><a href="#films" class="header-link">FILMS</a></li>
+					<li><a href="#films" class="header-link" id="hfilm">FILMS</a></li>
 					<li><a href="https://bitclout.com/u/FilmClout" target="_blank" class="header-link">CONTACT</a></li>
 					<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin"
 						data-popup="login"><a href="#" id="logbtn" onclick="login()">LOGIN</a></li>
@@ -299,7 +299,7 @@
 					<ul class="grid__list grid__list--fmenu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#features">Features</a></li>
-						<li><a href="#films">Films</a></li>
+						<li><a href="#films" id="ffilm">Films</a></li>
 					</ul>
 				</div>
 				<div class="grid__item">
@@ -336,6 +336,10 @@
 		$(document).ready(function () {
 			$('.api-section').css('display', 'none')
 			$('#logout').css('display', 'none');
+			$('#hfilm').css('display','none');
+			$('#ffilm').css('display','none');
+
+			
 		});
 
 		function logout(){
