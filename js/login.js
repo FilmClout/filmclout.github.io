@@ -31,6 +31,8 @@ function handleLogin(payload) {
         $('.btn--orange-bg').css('display', 'none');
         $('#gridmore').css('display', 'none');
         $('#logout').css('display', 'block');
+        $('#hfilm').css('display', 'inline-block');
+        $('#ffilm').css('display','inline-block');
         //element.innerText = 'Logged in as ' + payload.publicKeyAdded;
 
     }
